@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+    <style>
+      /* Content - Padding - Border - Margin */
+      div.content {
+        background-color: rgb(130, 196, 255);
+        width: 100px;
+        height: 100px;
+        padding: 20;
+        border: 10px solid rgb(67, 94, 249);
+        margin: 40px;
+      }
+      span {
+        border: 1px solid red;
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+      }
+      div.padding {
+        border: 1px solid black;
+        /* 위, 오른쪽, 아래, 왼쪽 */
+        padding: 20px 10px 5px 3px;
+        /* 상하, 좌우 */
+        padding: 20px 10px;
+      }
+      div.margin {
+        border: 1px solid black;
+        margin: 20px;
+      }
+      .shape {
+        border: 1px solid red;
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content"></div>
+    <span>Hello CSS</span>
+    <div class="padding">
+      다이어트를 통해 섭취하는 칼로리가 일일 에너지 필요량보다 적을 경우, 신체는 에너지 공급원으로 사용할 수 있는 지방을
+      분해하기 시작한다. 신체는 기본적으로 활동을 유지하기 위해 에너지를 필요로 한다. 이 에너지는 주로 섭취한
+      음식으로부터 얻지만, 다이어트 시에는 이 공급이 줄어들게 된다. 따라서 신체는 저장된 에너지원인 지방을 분해하여
+      부족한 에너지를 충당하게 된다. 예를 들어, 하루 2000칼로리를 소비하는 사람이 1500칼로리만 섭취할 경우, 부족한
+      500칼로리는 체내 지방을 통해 보충된다. 이는 장기적으로 체지방 감소로 이어진다.
+    </div>
+    <div class="margin">
+      다이어트를 통해 섭취하는 칼로리가 일일 에너지 필요량보다 적을 경우, 신체는 에너지 공급원으로 사용할 수 있는 지방을
+      분해하기 시작한다. 신체는 기본적으로 활동을 유지하기 위해 에너지를 필요로 한다. 이 에너지는 주로 섭취한
+      음식으로부터 얻지만, 다이어트 시에는 이 공급이 줄어들게 된다. 따라서 신체는 저장된 에너지원인 지방을 분해하여
+      부족한 에너지를 충당하게 된다. 예를 들어, 하루 2000칼로리를 소비하는 사람이 1500칼로리만 섭취할 경우, 부족한
+      500칼로리는 체내 지방을 통해 보충된다. 이는 장기적으로 체지방 감소로 이어진다.
+    </div>
+    <div class="shape" style="margin-bottom: 40px"></div>
+    <div class="shape"></div>
+  </body>
+</html>
